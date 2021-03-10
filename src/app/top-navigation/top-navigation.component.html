@@ -1,0 +1,11 @@
+<div class="top-navigation" role="banner">
+    <img
+      class="App-logo"
+      alt="Dropless Logo"
+      src="../assets/dropless-logo.svg"
+    />
+    <div class="navButtons">
+      <button [ngClass]="{'button': true, 'active': !showMap}" routerLink="/" (click)="changeButtonClass('ABOUT')"> About </button>
+      <button [ngClass]="{'button': true, 'active': showMap}" routerLink="/map" (click)="changeButtonClass('MAP')"> Map </button>
+    </div>
+</div>
